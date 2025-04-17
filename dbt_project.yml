@@ -37,9 +37,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
    my_new_project: # <-- make sure this value matches `project_name` on line 5
-   mart:
-     +materialized: table
-     finance:
-       +schema: finance
+    mart:
+      +materialized: table
+      finance:
+        +schema: finance
 
 
