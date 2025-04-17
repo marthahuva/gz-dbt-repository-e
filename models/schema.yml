@@ -134,6 +134,7 @@ models:
       tests:
         - unique:
             column_name: "(orders_id || '-' || products_id)"
+
     - name: int_orders_margin
       description: Gross margin aggregated per order
       columns:
@@ -245,12 +246,6 @@ models:
       tests:
           - unique:
               column_name: "(campaign_key || '-' || date_date)"
-    - name: int_campaigns
-      description: add data for date
-      columns:
-        - name: date_date
-          tests:
-             - not_null
 
     - name: finance_campaigns_day
       description: global kpi
